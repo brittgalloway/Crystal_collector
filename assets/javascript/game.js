@@ -31,3 +31,13 @@ losesElement = $("loses");
 // each of the 4 crystals (blue, green, yellow, and pink ) are assigned a random number between 1-12, the number is hidden from the player
 
 // on click, the number assigned to the crystal is added to collectedCrystals
+
+// game ends when collectedCrystals=targetNumber (win) OR collectedCrystals>targetNumber (lose)
+
+// //if win, wins +1 "you win!" delay 1 sec
+// //if lose, loses+1 "you lose!" delay 1 sec
+
+// game automatically restarts
+// score stays updated
+// new targetNumber is choosen
+// each of the 4 crystals get a new number
