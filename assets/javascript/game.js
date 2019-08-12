@@ -1,7 +1,7 @@
 // list out varibles
 
 // // Number we trying to match MUST BE BETWEEN 19-120 and randomly selected
-const targetNumberElement = document.getElementById("targetNumber");
+const goalNumberElement = document.getElementById("goalNumber");
 
 // // The sum of the crystal click scores, will change
 let collectedCrystalsElements = document.getElementById("collectedCrystals");
