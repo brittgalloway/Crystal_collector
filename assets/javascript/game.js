@@ -1,28 +1,28 @@
 // list out varibles
 
 // // Number we trying to match MUST BE BETWEEN 19-120 and randomly selected
-targetNumberElement = $("targetNumber");
+const targetNumberElement = document.getElementById("targetNumber");
 
 // // The sum of the crystal click scores, will change
-collectedCrystalsElements = $("collectedCrystals");
+let collectedCrystalsElements = document.getElementById("collectedCrystals");
 
 // blue crystal
-blueElement = $("blue");
+const blueElement = document.getElementById("blue");
 
 // green crystal
-greenElement = $("green");
+let greenElement = document.getElementById("green");
 
 // yellow crystal
-yellowElement = $("yellow");
+let yellowElement = document.getElementById("yellow");
 
 // pink crystal
-pinkElement = $("pink");
+let pinkElement = document.getElementById("pink");
 
 // total wins
-winsElement = $("wins");
+let winsElement = document.getElementById("wins");
 
 // total loses
-losesElement = $("loses");
+let losesElement = document.getElementById("loses");
 
 // game starts on page load
 // wins, loses, and collected crystals are 0
