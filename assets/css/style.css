@@ -82,6 +82,12 @@ p {
   font-family: "Helvetica Neue", Helvetica, sans-serif;
   font-size: 14pt;
 }
+aside {
+  width: 315px;
+  float: right;
+  background: #dddddd;
+  padding: 20px;
+}
 .crystals {
   float: right;
   width: 315px;
@@ -90,10 +96,6 @@ p {
   font-family: "Helvetica Neue", Helvetica, sans-serif;
   font-size: 6pt;
 }
-aside {
-  width: 315px;
-  float: right;
-}
 #targetNumber {
   font-family: "Georgia", Times, Times New Roman, serif;
   color: #4aaaa5;
@@ -101,7 +103,8 @@ aside {
   margin: auto;
   padding: 20px;
   border-style: solid;
-  text-align: right;
+  text-align: center;
+  padding-top: 20px;
 }
 #collectedCrystals {
   font-family: "Georgia", Times, Times New Roman, serif;
@@ -110,7 +113,7 @@ aside {
   margin: auto;
   padding: 20px;
   border-style: solid;
-  text-align: right;
+  text-align: center;
 }
 #score {
   font-family: "Georgia", Times, Times New Roman, serif;
@@ -119,5 +122,5 @@ aside {
   margin: auto;
   padding: 20px;
   border-style: solid;
-  text-align: right;
+  text-align: center;
 }
