@@ -1,26 +1,26 @@
 // list out varibles
 
 // // Number we trying to match MUST BE BETWEEN 19-120 and randomly selected
-targetNumberElement = document.getElementById("targetNumber");
+targetNumberElement = $("targetNumber");
 
 // // The sum of the crystal click scores, will change
-collectedCrystalsElements = document.getElementById("collectedCrystals");
+collectedCrystalsElements = $("collectedCrystals");
 
 // // * Each crystal should have a random hidden value between 1 - 12.
 // blue crystal
-blueElement = document.getElementById("blue");
+blueElement = $("blue");
 
 // green crystal
-greenElement = document.getElementById("green");
+greenElement = $("green");
 
 // yellow crystal
-yellowElement = document.getElementById("yellow");
+yellowElement = $("yellow");
 
 // pink crystal
-pinkElement = document.getElementById("pink");
+pinkElement = $("pink");
 
 // total wins
-winsElement = document.getElementById("wins");
+winsElement = $("wins");
 
 // total loses
-losesElement = document.getElementById("loses");
+losesElement = $("loses");
