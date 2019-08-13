@@ -59,7 +59,8 @@ h1 {
   color: #4aaaa5;
   font-size: 36pt;
   margin: auto;
-  padding: 20px;
+
+  padding: 0px 20px 20px 20px;
 }
 h2 {
   font-family: "Georgia", Times, Times New Roman, serif;
@@ -75,7 +76,7 @@ main {
 }
 article {
   width: 250px;
-  padding: 20px;
+
   margin-right: 20px;
   float: right;
 }
@@ -83,6 +84,7 @@ p {
   font-family: "Helvetica Neue", Helvetica, sans-serif;
   font-size: 12pt;
   columns: #777777;
+  text-align: right;
 }
 aside {
   width: 500px;
