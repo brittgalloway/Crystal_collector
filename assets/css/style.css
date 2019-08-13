@@ -74,32 +74,34 @@ main {
   padding: auto;
 }
 article {
-  width: 400px;
+  width: 250px;
   padding: 20px;
   margin-right: 20px;
+  float: right;
 }
 p {
   font-family: "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 14pt;
+  font-size: 12pt;
+  columns: #777777;
 }
 aside {
-  width: 315px;
-  float: right;
+  width: 500px;
+  /* float: right; */
   background: #dddddd;
   padding: 20px;
 }
 .crystals {
-  float: right;
   width: 315px;
+  margin: auto;
 }
 #credit {
   font-family: "Helvetica Neue", Helvetica, sans-serif;
   font-size: 6pt;
 }
-#targetNumber {
+#goalNumber {
   font-family: "Georgia", Times, Times New Roman, serif;
   color: #4aaaa5;
-  font-size: 20pt;
+  font-size: 36pt;
   margin: auto;
   padding: 20px;
   border-style: solid;
