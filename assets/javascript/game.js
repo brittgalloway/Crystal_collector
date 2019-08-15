@@ -1,44 +1,56 @@
-$( document ).ready(){
+$(document).ready(function() {
+  // // list out varibles
 
+  // // // Number we trying to match MUST BE BETWEEN 19-120 and randomly selected
+  // const goalNumberElement = $("#goalNumber");
 
-// list out varibles
+  // // // The sum of the crystal click scores, will change
+  // let collectedCrystalsElements = $("#collectedCrystals");
 
-// // Number we trying to match MUST BE BETWEEN 19-120 and randomly selected
-const goalNumberElement = $("#goalNumber");
+  // // blue crystal
+  // const blueElement = $("#blue");
 
-// // The sum of the crystal click scores, will change
-let collectedCrystalsElements = $("#collectedCrystals");
+  // // green crystal
+  // let greenElement = $("#green");
 
-// blue crystal
-const blueElement = $("#blue");
+  // // yellow crystal
+  // let yellowElement = $("#yellow");
 
-// green crystal
-let greenElement = $("#green");
+  // // pink crystal
+  // let pinkElement = $("#pink");
 
-// yellow crystal
-let yellowElement = $("#yellow");
+  // // total wins
+  // let winsElement = $("#wins");
 
-// pink crystal
-let pinkElement = $("#pink");
+  // // total loses
+  // let losesElement = $("#loses");
 
-// total wins
-let winsElement = $("#wins");
+  let sum = 0;
+  let win = 0;
+  let lose = 0;
 
-// total loses
-let losesElement = $("#loses");
-
-let sum = 0;
-let win = 0;
-let lose = 0;
-
-// game starts on page load
-function gamestart() {
+  // game starts on page load
+  // function gamestart() {
   // wins, loses, and collected crystals are 0
 
   // goal number is randomly selected (a number between 19-120)
-  const goalNum = Math.floor(Math.random() * (19 - 120));
+
+  const goalNum = Math.floor(Math.random() * (19 - 120) * 1);
   console.log(goalNum);
+
   // each of the 4 crystals (blue, green, yellow, and pink ) are assigned a random number between 1-12, the number is hidden from the player
+  $("#blue").click(function() {
+    alert("it worked!");
+  });
+  $("#green").click(function() {
+    alert("it worked!");
+  });
+  $("#yellow").click(function() {
+    alert("it worked!");
+  });
+  $("#pink").click(function() {
+    alert("it worked!");
+  });
 
   // on click, the number assigned to the crystal is added to collectedCrystals
 
@@ -51,5 +63,6 @@ function gamestart() {
   // score stays updated
   // new targetNumber is choosen
   // each of the 4 crystals get a new number
-// }
-// };
+  // }
+  // }
+});
