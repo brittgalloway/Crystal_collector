@@ -1,30 +1,6 @@
 $(document).ready(function() {
   // // list out varibles
 
-  // // // Number we trying to match MUST BE BETWEEN 19-120 and randomly selected
-  // const goalNumberElement = $("#goalNumber");
-
-  // // // The sum of the crystal click scores, will change
-  // let collectedCrystalsElements = $("#collectedCrystals");
-
-  // // blue crystal
-  // const blueElement = $("#blue");
-
-  // // green crystal
-  // let greenElement = $("#green");
-
-  // // yellow crystal
-  // let yellowElement = $("#yellow");
-
-  // // pink crystal
-  // let pinkElement = $("#pink");
-
-  // // total wins
-  // let winsElement = $("#wins");
-
-  // // total loses
-  // let losesElement = $("#loses");
-
   let sum = 0;
   let win = 0;
   let lose = 0;
@@ -35,21 +11,59 @@ $(document).ready(function() {
 
   // goal number is randomly selected (a number between 19-120)
 
-  const goalNum = Math.floor(Math.random() * (19 - 120) * 1);
-  console.log(goalNum);
+  function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
+  }
+  const goalNum = getRandomInt(19, 120);
+  $("#goalNumber").text(goalNum);
+
+  function bGem(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
+  }
+  const blueGem = bGem(1, 12);
+
+  function pGem(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
+  }
+  const pinkGem = pGem(1, 12);
+
+  function gGem(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
+  }
+  const greenGem = gGem(1, 12);
+
+  function yGem(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
+  }
+  const yellowGem = yGem(1, 12);
 
   // each of the 4 crystals (blue, green, yellow, and pink ) are assigned a random number between 1-12, the number is hidden from the player
+
   $("#blue").click(function() {
-    alert("it worked!");
+    sum = blueGem + sum;
+    $("#collectedCrystals").text(sum);
   });
   $("#green").click(function() {
-    alert("it worked!");
+    sum = greenGem + sum;
+    $("#collectedCrystals").text(sum);
   });
   $("#yellow").click(function() {
-    alert("it worked!");
+    sum = yellowGem + sum;
+    $("#collectedCrystals").text(sum);
   });
   $("#pink").click(function() {
-    alert("it worked!");
+    sum = pinkGem + sum;
+    $("#collectedCrystals").text(sum);
   });
 
   // on click, the number assigned to the crystal is added to collectedCrystals
