@@ -53,81 +53,133 @@ $(document).ready(function() {
   $("#blue").click(() => {
     sum = blueGem + sum;
     $("#collectedCrystals").html(sum);
+
+    // //if win, wins +1 "you win!"
     if (goalNum === sum) {
-      // //if win, wins +1 "you win!"
       win = win + 1;
       $("#wins").text("WINS: " + win);
 
-      // //if lose, loses+1 "you lose!"
+      const goalNum = getRandomInt(19, 120);
+      $("#goalNumber").text(goalNum);
+      sum = 0;
+      //     const blueGem = bGem(1, 12);
+      //     const pinkGem = pGem(1, 12);
+      //     const greenGem = gGem(1, 12);
+      //     const yellowGem = yGem(1, 12);
     }
+
+    //     // //if lose, loses+1 "you lose!"
     if (goalNum < sum) {
       lose = lose + 1;
       $("#losses").text("LOSSES: " + lose);
+      const goalNum = getRandomInt(19, 120);
+      $("#goalNumber").text(goalNum);
+      sum = 0;
+      //     const blueGem = bGem(1, 12);
+      //     const pinkGem = pGem(1, 12);
+      //     const greenGem = gGem(1, 12);
+      //     const yellowGem = yGem(1, 12);
     }
   });
+
   $("#green").click(() => {
     sum = greenGem + sum;
     $("#collectedCrystals").html(sum);
+    // //if win, wins +1 "you win!"
     if (goalNum === sum) {
-      // //if win, wins +1 "you win!"
       win = win + 1;
       $("#wins").text("WINS: " + win);
 
-      // //if lose, loses+1 "you lose!"
+      const goalNum = getRandomInt(19, 120);
+      $("#goalNumber").text(goalNum);
+      sum = 0;
+      //     const blueGem = bGem(1, 12);
+      //     const pinkGem = pGem(1, 12);
+      //     const greenGem = gGem(1, 12);
+      //     const yellowGem = yGem(1, 12);
     }
-    if (goalNum < sum) {
-      lose = lose + 1;
-      $("#losses").text("LOSSES: " + lose);
-    }
-    if (goalNum === sum) {
-      // //if win, wins +1 "you win!"
-      win = win + 1;
-      $("#wins").text("WINS: " + win);
 
-      // //if lose, loses+1 "you lose!"
-    }
+    //     // //if lose, loses+1 "you lose!"
     if (goalNum < sum) {
       lose = lose + 1;
       $("#losses").text("LOSSES: " + lose);
+      const goalNum = getRandomInt(19, 120);
+      $("#goalNumber").text(goalNum);
+      sum = 0;
+      //     const blueGem = bGem(1, 12);
+      //     const pinkGem = pGem(1, 12);
+      //     const greenGem = gGem(1, 12);
+      //     const yellowGem = yGem(1, 12);
     }
   });
   $("#yellow").click(() => {
     sum = yellowGem + sum;
     $("#collectedCrystals").html(sum);
+    // //if win, wins +1 "you win!"
     if (goalNum === sum) {
-      // //if win, wins +1 "you win!"
       win = win + 1;
       $("#wins").text("WINS: " + win);
 
-      // //if lose, loses+1 "you lose!"
+      const goalNum = getRandomInt(19, 120);
+      $("#goalNumber").text(goalNum);
+      sum = 0;
+      //     const blueGem = bGem(1, 12);
+      //     const pinkGem = pGem(1, 12);
+      //     const greenGem = gGem(1, 12);
+      //     const yellowGem = yGem(1, 12);
     }
+
+    //     // //if lose, loses+1 "you lose!"
     if (goalNum < sum) {
       lose = lose + 1;
       $("#losses").text("LOSSES: " + lose);
+      const goalNum = getRandomInt(19, 120);
+      $("#goalNumber").text(goalNum);
+      sum = 0;
+      //     const blueGem = bGem(1, 12);
+      //     const pinkGem = pGem(1, 12);
+      //     const greenGem = gGem(1, 12);
+      //     const yellowGem = yGem(1, 12);
     }
   });
   $("#pink").click(() => {
     sum = pinkGem + sum;
     $("#collectedCrystals").html(sum);
+    // //if win, wins +1 "you win!"
     if (goalNum === sum) {
-      // //if win, wins +1 "you win!"
       win = win + 1;
-      $("#wins").text("WINS" + win);
+      $("#wins").text("WINS: " + win);
 
-      // //if lose, loses+1 "you lose!"
+      const goalNum = getRandomInt(19, 120);
+      $("#goalNumber").text(goalNum);
+      sum = 0;
+      //     const blueGem = bGem(1, 12);
+      //     const pinkGem = pGem(1, 12);
+      //     const greenGem = gGem(1, 12);
+      //     const yellowGem = yGem(1, 12);
     }
+
+    //     // //if lose, loses+1 "you lose!"
     if (goalNum < sum) {
       lose = lose + 1;
-      $("#losses").append(lose);
+      $("#losses").text("LOSSES: " + lose);
+      const goalNum = getRandomInt(19, 120);
+      $("#goalNumber").text(goalNum);
+      sum = 0;
+      //     const blueGem = bGem(1, 12);
+      //     const pinkGem = pGem(1, 12);
+      //     const greenGem = gGem(1, 12);
+      //     const yellowGem = yGem(1, 12);
     }
   });
 
   // game ends when collectedCrystals=targetNumber (win) OR collectedCrystals>targetNumber (lose)
 
   // game automatically restarts
-  // score stays updated
-  // new targetNumber is choosen
+  // score stays updated -  DONE
+  // new targetNumber is choosen - DONE
   // each of the 4 crystals get a new number
+  //sum is 0 - DONE
   // }
   // }
 });
