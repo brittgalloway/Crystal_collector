@@ -10,7 +10,6 @@ $(document).ready(function() {
   // wins, loses, and collected crystals are 0
 
   // goal number is randomly selected (a number between 19-120)
-
   function getRandomInt(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
@@ -51,35 +50,80 @@ $(document).ready(function() {
 
   // on click, the number assigned to the crystal is added to collectedCrystals
 
-  $("#blue").click(function() {
+  $("#blue").click(() => {
     sum = blueGem + sum;
-    $("#collectedCrystals").text(sum);
+    $("#collectedCrystals").html(sum);
+    if (goalNum === sum) {
+      // //if win, wins +1 "you win!"
+      win = win + 1;
+      $("#wins").text("WINS: " + win);
+
+      // //if lose, loses+1 "you lose!"
+    }
+    if (goalNum < sum) {
+      lose = lose + 1;
+      $("#losses").text("LOSSES: " + lose);
+    }
   });
-  $("#green").click(function() {
+  $("#green").click(() => {
     sum = greenGem + sum;
-    $("#collectedCrystals").text(sum);
+    $("#collectedCrystals").html(sum);
+    if (goalNum === sum) {
+      // //if win, wins +1 "you win!"
+      win = win + 1;
+      $("#wins").text("WINS: " + win);
+
+      // //if lose, loses+1 "you lose!"
+    }
+    if (goalNum < sum) {
+      lose = lose + 1;
+      $("#losses").text("LOSSES: " + lose);
+    }
+    if (goalNum === sum) {
+      // //if win, wins +1 "you win!"
+      win = win + 1;
+      $("#wins").text("WINS: " + win);
+
+      // //if lose, loses+1 "you lose!"
+    }
+    if (goalNum < sum) {
+      lose = lose + 1;
+      $("#losses").text("LOSSES: " + lose);
+    }
   });
-  $("#yellow").click(function() {
+  $("#yellow").click(() => {
     sum = yellowGem + sum;
-    $("#collectedCrystals").text(sum);
+    $("#collectedCrystals").html(sum);
+    if (goalNum === sum) {
+      // //if win, wins +1 "you win!"
+      win = win + 1;
+      $("#wins").text("WINS: " + win);
+
+      // //if lose, loses+1 "you lose!"
+    }
+    if (goalNum < sum) {
+      lose = lose + 1;
+      $("#losses").text("LOSSES: " + lose);
+    }
   });
-  $("#pink").click(function() {
+  $("#pink").click(() => {
     sum = pinkGem + sum;
-    $("#collectedCrystals").text(sum);
+    $("#collectedCrystals").html(sum);
+    if (goalNum === sum) {
+      // //if win, wins +1 "you win!"
+      win = win + 1;
+      $("#wins").text("WINS" + win);
+
+      // //if lose, loses+1 "you lose!"
+    }
+    if (goalNum < sum) {
+      lose = lose + 1;
+      $("#losses").append(lose);
+    }
   });
 
   // game ends when collectedCrystals=targetNumber (win) OR collectedCrystals>targetNumber (lose)
-  if (goalNum === sum) {
-    // //if win, wins +1 "you win!" delay 1 sec
-    win++;
-    $("#wins").html(win);
-    alert("You win!");
-  } else if (goalNum < sum) {
-    lose++;
-    $("#losses").html(lose);
-    alert("you lose!");
-    // //if lose, loses+1 "you lose!" delay 1 sec
-  }
+
   // game automatically restarts
   // score stays updated
   // new targetNumber is choosen
