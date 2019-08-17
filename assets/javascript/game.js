@@ -6,7 +6,7 @@ $(document).ready(function() {
   let lose = 0;
 
   // game starts on page load
-  // function gamestart() {
+
   // wins, loses, and collected crystals are 0
 
   // goal number is randomly selected (a number between 19-120)
@@ -19,36 +19,23 @@ $(document).ready(function() {
   $("#goalNumber").text(goalNum);
 
   // each of the 4 crystals (blue, green, yellow, and pink ) are assigned a random number between 1-12, the number is hidden from the player
-  function bGem(min, max) {
+  function gem(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
   }
-  let blueGem = bGem(1, 12);
-
-  function pGem(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
-  }
-  let pinkGem = pGem(1, 12);
-
-  function gGem(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
-  }
-  let greenGem = gGem(1, 12);
-
-  function yGem(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min)) + min;
-    //The maximum is exclusive and the minimum is inclusive
-  }
-  let yellowGem = yGem(1, 12);
+  let blueGem = gem(1, 12);
+  let pinkGem = gem(1, 12);
+  let greenGem = gem(1, 12);
+  let yellowGem = gem(1, 12);
 
   // on click, the number assigned to the crystal is added to collectedCrystals
+  function redifineGems() {
+    blueGem = gem(1, 12);
+    pinkGem = gem(1, 12);
+    greenGem = gem(1, 12);
+    yellowGem = gem(1, 12);
+  }
 
   $("#blue").click(() => {
     sum = blueGem + sum;
@@ -63,10 +50,11 @@ $(document).ready(function() {
       $("#goalNumber").text(goalNum);
       sum = 0;
       $("#collectedCrystals").html(sum);
-      blueGem = bGem(1, 12);
-      pinkGem = pGem(1, 12);
-      greenGem = gGem(1, 12);
-      yellowGem = yGem(1, 12);
+      // blueGem = bGem(1, 12);
+      // pinkGem = pGem(1, 12);
+      // greenGem = gGem(1, 12);
+      // yellowGem = yGem(1, 12);
+      redifineGems();
     }
 
     //     // //if lose, loses+1 "you lose!"
@@ -77,10 +65,11 @@ $(document).ready(function() {
       $("#goalNumber").text(goalNum);
       sum = 0;
       $("#collectedCrystals").html(sum);
-      blueGem = bGem(1, 12);
-      pinkGem = pGem(1, 12);
-      greenGem = gGem(1, 12);
-      yellowGem = yGem(1, 12);
+      // blueGem = bGem(1, 12);
+      // pinkGem = pGem(1, 12);
+      // greenGem = gGem(1, 12);
+      // yellowGem = yGem(1, 12);
+      redifineGems();
     }
   });
 
@@ -96,10 +85,7 @@ $(document).ready(function() {
       $("#goalNumber").text(goalNum);
       sum = 0;
       $("#collectedCrystals").html(sum);
-      blueGem = bGem(1, 12);
-      pinkGem = pGem(1, 12);
-      greenGem = gGem(1, 12);
-      yellowGem = yGem(1, 12);
+      redifineGems();
     }
 
     //     // //if lose, loses+1 "you lose!"
@@ -110,10 +96,7 @@ $(document).ready(function() {
       $("#goalNumber").text(goalNum);
       sum = 0;
       $("#collectedCrystals").html(sum);
-      blueGem = bGem(1, 12);
-      pinkGem = pGem(1, 12);
-      greenGem = gGem(1, 12);
-      yellowGem = yGem(1, 12);
+      redifineGems();
     }
   });
   $("#yellow").click(() => {
@@ -128,10 +111,7 @@ $(document).ready(function() {
       $("#goalNumber").text(goalNum);
       sum = 0;
       $("#collectedCrystals").html(sum);
-      blueGem = bGem(1, 12);
-      pinkGem = pGem(1, 12);
-      greenGem = gGem(1, 12);
-      yellowGem = yGem(1, 12);
+      redifineGems();
     }
 
     // //if lose, loses+1 "you lose!"
@@ -142,10 +122,7 @@ $(document).ready(function() {
       $("#goalNumber").text(goalNum);
       sum = 0;
       $("#collectedCrystals").html(sum);
-      blueGem = bGem(1, 12);
-      pinkGem = pGem(1, 12);
-      greenGem = gGem(1, 12);
-      yellowGem = yGem(1, 12);
+      redifineGems();
     }
   });
   $("#pink").click(() => {
@@ -160,10 +137,7 @@ $(document).ready(function() {
       $("#goalNumber").text(goalNum);
       sum = 0;
       $("#collectedCrystals").html(sum);
-      blueGem = bGem(1, 12);
-      pinkGem = pGem(1, 12);
-      greenGem = gGem(1, 12);
-      yellowGem = yGem(1, 12);
+      redifineGems();
     }
 
     //     // //if lose, loses+1 "you lose!"
@@ -174,10 +148,7 @@ $(document).ready(function() {
       $("#goalNumber").text(goalNum);
       sum = 0;
       $("#collectedCrystals").html(sum);
-      blueGem = bGem(1, 12);
-      pinkGem = pGem(1, 12);
-      greenGem = gGem(1, 12);
-      yellowGem = yGem(1, 12);
+      redifineGems();
     }
   });
   // blueGem = bGem(1, 12);
