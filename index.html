@@ -5,69 +5,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Crystal Counter!</title>
-    <link rel="stylesheet" href="assets/css/reset.css" />
+    <!-- BOOTSTRAP------------------------------ -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
     <link rel="stylesheet" href="assets/css/style.css" />
-    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
   </head>
   <body>
     <header>
-      <nav>
-        <ul>
-          <li>
-            <a href="https://brittgalloway.github.io/Basic-Portfolio/about_materialize.html"
-              >About</a
-              >
-            </li>
-            <li>
+      <nav class="navbar navbar-expand-lg navbar-light bg-info">
+        <div class="container">
+          <a
+            class="navbar-brand text-white"
+            href="https://brittgalloway.github.io/Basic-Portfolio/index.html"
+            >Brittney Galloway</a
+          >
+
+          <ul class="navbar-nav ">
+            <li class="nav-item active">
               <a
-              href="https://brittgalloway.github.io/Basic-Portfolio/portfolio_materialize.html"
-              >Portfolio</a
+                href="https://brittgalloway.github.io/Basic-Portfolio/about_materialize.html"
+                >About</a
               >
             </li>
-            <li>
-            <a
-            href="https://brittgalloway.github.io/Basic-Portfolio/contact_materialize.html"
-            >Contact</a
-            >
-          </li>
-        </ul>
+            <li class="nav-item">
+              <a
+                href="https://brittgalloway.github.io/Basic-Portfolio/portfolio_materialize.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="https://brittgalloway.github.io/Basic-Portfolio/contact_materialize.html"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main>
-      <h1>Crystal Collector</h1>
-      <article>
-        <h2>How to Play</h2>
-        You will be given a random number at the start of the game. There are
-          four crystals to the left. By clicking on a crystal, you will add a specific
-          amount of points to your total score. You win the game by matching
-          your total score to the random number, you lose the game if your total
-          score goes above the random number. The value of each crystal is
-          hidden from you until you click on it. Each time the game starts, the
-          game will change the values of each crystal.
-          Good luck!
-        </p>
-      </article>
-      <aside>
-        <div class="crystals">
-          <h2>Crystals</h2>
-          <img id="blue" src="assets/images/blue_triangle.png" />
-          <img id="green" src="assets/images/green_teardrop.png" />
-          <img id="yellow" src="assets/images/yellow_heart.png" />
-          <img id="pink" src="assets/images/pink_oval.png" />
-          <a
-          id="credit"
-          href="https://www.freepik.com/free-photos-vectors/heart"
-          >Heart vector created by macrovector - www.freepik.com</a
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-3 col-lg-3">
+            <div class="card">
+              <div class="card-body border border-info">
+                <h6 class="card-title text-center text-info">How to Play</h6>
+                <p class="card-text">
+                  You will be given a random number at the start of the game.
+                  There are four crystals to the left. By clicking on a crystal,
+                  you will add a specific amount of points to your total score.
+                  You win the game by matching your total score to the random
+                  number, you lose the game if your total score goes above the
+                  random number. The value of each crystal is hidden from you
+                  until you click on it. Each time the game starts, the game
+                  will change the values of each crystal. Good luck!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="jumbotron col-sm-12 col-md-9 col-lg-9 border border-info bg-white"
           >
+            <h1 class="display-4 text-center text-info">Crystal Collector</h1>
+            <div class="lead">
+              <div class="crystals"></div>
+              <div class="text-center display-5 " id="collectedCrystals"></div>
+              <div class="text-center display-4" id="goalNumber"></div>
+              <div class="text-left" id="score">
+                <div id="wins">WINS: 0</div>
+                <div id="losses">LOSSES: 0</div>
+              </div>
+            </div>
+            <hr class="my-4" />
+
+            <div class="row">
+              <div class="col">
+                <img
+                  class="img-thumbnail rounded border border-info"
+                  id="blue"
+                  src="assets/images/blue_triangle.png"
+                />
+              </div>
+              <div class="col">
+                <img
+                  class="img-thumbnail rounded border border-info"
+                  id="green"
+                  src="assets/images/green_teardrop.png"
+                />
+              </div>
+              <div class="col">
+                <img
+                  class="img-thumbnail rounded border border-info"
+                  id="yellow"
+                  src="assets/images/yellow_heart.png"
+                />
+              </div>
+              <div class="col">
+                <img
+                  class="img-thumbnail rounded border border-info"
+                  id="pink"
+                  src="assets/images/pink_oval.png"
+                />
+                <a
+                  id="credit"
+                  href="https://www.freepik.com/free-photos-vectors/heart"
+                  >Heart vector created by macrovector - www.freepik.com</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
-        <div id="goalNumber"></div>
-        <div id="collectedCrystals"></div>
-        <div id="score">
-          <p>
-          <div id="wins">WINS: 0</div>
-          <div id="losses">LOSSES: 0</div>
-        </div>
-      </aside>
+      </div>
     </main>
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -76,5 +129,4 @@
     ></script>
     <script src="assets/javascript/game.js"></script>
   </body>
-  </html>
-  
+</html>

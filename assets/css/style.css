@@ -1,45 +1,24 @@
-img {
-  width: 75px;
-}
 header {
-  background: #fff;
-  border-bottom: solid;
-  border-bottom-width: 100%;
-  border-color: #cccccc;
-  height: 77px;
-  width: 100%;
+  margin-bottom: 30px;
 }
 
-nav {
-  font-family: "Helvetica Neue", Helvetica, sans-serif;
-  color: #777777;
-  size: 18pt;
-  float: right;
-  padding-top: 30px;
-  margin-right: 100px;
-}
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
 li {
   display: inline;
   padding: 0px 25px 0px 25px;
-  border-right: 1px solid #dddddd;
 }
 
 li:last-child {
   border-right: none;
+  padding-left: 25px;
 }
 
 a:link {
   font-family: "Helvetica Neue", Helvetica, sans-serif;
-  color: #777777;
+  color: #ffffff;
   text-decoration: none;
 }
 a:visited {
-  color: #4aaaa5;
+  color: #ffffff;
 }
 a:hover {
   color: #ffce6e;
@@ -53,79 +32,8 @@ body {
 
 h1 {
   font-family: "Georgia", Times, Times New Roman, serif;
-  color: #4aaaa5;
-  font-size: 36pt;
-  margin: auto;
-  text-align: center;
-  padding: 20px 20px 20px 20px;
 }
-main {
-  width: 960px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 50px;
-  padding: auto;
-  background: #fff;
-  border: 1px solid #4aaaa5;
-  border-radius: 30px;
-}
-h2 {
-  font-family: "Georgia", Times, Times New Roman, serif;
-  color: #4aaaa5;
-  font-size: 24pt;
-  text-align: center;
-  margin: auto;
-  padding: 20px;
-}
-article {
-  width: 300px;
-  text-align: justify;
-  font-family: "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 12pt;
-  color: #777777;
-  margin-right: 40px;
-  float: right;
-}
-
-aside {
-  width: 500px;
-
-  /* background: #f7fffe; */
-  padding: 20px;
-}
-.crystals {
-  width: 315px;
-  margin: auto;
-}
-#credit {
-  font-family: "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 6pt;
-}
-#goalNumber {
-  font-family: "Georgia", Times, Times New Roman, serif;
-  color: #4aaaa5;
-  font-size: 36pt;
-  margin: auto;
-  padding: 20px;
-  border-style: solid;
-  text-align: center;
-  padding-top: 20px;
-}
-#collectedCrystals {
-  font-family: "Georgia", Times, Times New Roman, serif;
-  color: #4aaaa5;
-  font-size: 20pt;
-  margin: auto;
-  padding: 20px;
-  border-style: solid;
-  text-align: center;
-}
-#score {
-  font-family: "Georgia", Times, Times New Roman, serif;
-  color: #4aaaa5;
-  font-size: 20pt;
-  margin: auto;
-  padding: 20px;
-  border-style: solid;
-  text-align: center;
+.jumbotron,
+.card {
+  margin-top: 10px;
 }
