@@ -1,4 +1,4 @@
-# Crystal_collector
+# Crystal Collector
 
 This is a fun number guessing game made with JQuery.
 
