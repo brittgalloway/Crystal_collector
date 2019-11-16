@@ -12,3 +12,6 @@ You lose if your points are greater than the random number.
 After each win or loss the game resets while keeping track of your wins and losses.
 
 Start the game and have fun!
+
+## Deployed Project:
+https://brittgalloway.github.io/unit-4-game/
